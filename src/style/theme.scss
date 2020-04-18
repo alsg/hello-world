@@ -1,0 +1,54 @@
+/*
+====================================================
+=================== DECLARATIONS ===================
+====================================================
+*/
+
+$base-color: #ffffff;
+$accent-color: #f2b33d;
+$main-text-color: #1f2424;
+
+$navbar-item-font-stack: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial,
+  sans-serif;
+
+@font-face {
+  font-family: "elephant-rough";
+  src: url("./font/Elephant/Elephant-Rough.otf") format("woff"),
+    url("./font/Elephant/Elephant-Rough.otf") format("opentype"),
+    url("./font/Elephant/Elephant-Rough.otf") format("truetype");
+}
+/*
+===================================================
+====================== STYLE ======================
+===================================================
+*/
+
+body {
+  font-family: $navbar-item-font-stack;
+  font-size: 18px;
+  color: #1f2424;
+}
+
+#title-one {
+  color: #f2b33d;
+  margin: -45px 0 0 0;
+}
+
+#title-two {
+  margin: -55px 0 0 50px;
+}
+
+#tagline {
+  text-align: justify;
+}
+
+.name {
+  font-size: 100px;
+  font-family: "elephant-rough";
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  background: $base-color !important;
+}

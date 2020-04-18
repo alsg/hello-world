@@ -9,8 +9,19 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import styled from "styled-components"
+
 import Header from "./header"
-import "./layout.css"
+
+const SocialMediaStyle = styled.div`
+  display: grid;
+  grid-template-columns: 25px 25px 25px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "sm1 sm2 sm3"
+    "desc desc desc";
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,20 +36,40 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div
+        class="container"
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
+          padding: `0px 40px`,
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+
+        <footer class="has-text-centered">
+          <div>
+            <a href="https://www.linkedin.com/in/angelica-g/">
+              {" "}
+              <FontAwesomeIcon
+                size="2x"
+                icon={["fab", "linkedin"]}
+              ></FontAwesomeIcon>
+            </a>
+            <a href="https://github.com/alsg">
+              {" "}
+              <FontAwesomeIcon
+                size="2x"
+                icon={["fab", "github"]}
+              ></FontAwesomeIcon>
+            </a>
+            <a href="https://www.goodreads.com/alsg">
+              {" "}
+              <FontAwesomeIcon
+                size="2x"
+                icon={["fab", "goodreads"]}
+              ></FontAwesomeIcon>
+            </a>
+          </div>
+          © {new Date().getFullYear()},{` A.G.`}
         </footer>
       </div>
     </>
