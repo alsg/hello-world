@@ -31,11 +31,6 @@ body {
 
 #title-one {
   color: #f2b33d;
-  margin: -45px 0 0 0;
-}
-
-#title-two {
-  margin: -55px 0 0 50px;
 }
 
 #tagline {
@@ -43,9 +38,11 @@ body {
 }
 
 .name {
-  font-size: 100px;
+  font-size: 30px;
   font-family: "elephant-rough";
   font-weight: bold;
+  padding: 0 3px;
+  margin-top: -2px;
 }
 
 .nav-link:hover {
