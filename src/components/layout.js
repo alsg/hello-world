@@ -16,13 +16,13 @@ const Layout = ({ children }) => (
     <Navbar />
 
     <div
-      class="container"
+      className="container"
       style={{
         padding: `0px 40px`,
       }}
     >
       <div
-        class="content"
+        className="content"
         style={{ padding: `2rem 25rem 1.5rem 0`, textAlign: `justify` }}
       >
         {children}
@@ -36,9 +36,5 @@ const Layout = ({ children }) => (
     </div>
   </div>
 )
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout

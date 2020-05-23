@@ -1,7 +1,7 @@
 import React from "react"
 
 const Footer = ({ children }) => (
-  <footer class="has-text-centered">
+  <footer className="has-text-centered">
     {children}
 
     <div>

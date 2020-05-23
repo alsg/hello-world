@@ -1,7 +1,3 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 module.exports = {
   siteMetadata: {
     //constants
@@ -10,12 +6,6 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-mailchimp",
-      options: {
-        endpoint: "",
-      },
-    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {

@@ -8,21 +8,21 @@ const Navbar = () => (
   >
     <div className="navbar-menu">
       <div className="navbar-start" style={{ alignItems: `center` }}>
-        <a class="navbar-item name" href="/">
-          <div id="title-one" class="navbar-item name">
+        <a className="navbar-item name" href="/">
+          <div id="title-one" className="navbar-item name">
             Angelica
           </div>
 
-          <div id="title-two" class="navbar-item name">
+          <div id="title-two" className="navbar-item name">
             Gonzales
           </div>
         </a>
 
         <div style={{ display: `flex`, marginLeft: `20px` }}>
-          <a class="navbar-item nav-link" href="/">
+          <a className="navbar-item nav-link" href="/">
             Home
           </a>
-          <a class="navbar-item nav-link" href="/blog">
+          <a className="navbar-item nav-link" href="/blog">
             Blog
           </a>
         </div>
