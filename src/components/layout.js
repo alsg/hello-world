@@ -9,32 +9,33 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import { useStaticQuery, graphql } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Navbar, Footer, SocialMediaTemplate } from "../components"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const Layout = ({ children }) => (
+  <div>
+    <Navbar />
 
-  return (
-    <>
+    <div
+      class="container"
+      style={{
+        padding: `0px 40px`,
+      }}
+    >
       <div
-        class="container"
-        style={{
-          padding: `0px 40px`,
-        }}
+        class="content"
+        style={{ padding: `2rem 25rem 1.5rem 0`, textAlign: `justify` }}
       >
-        <main>{children}</main>
+        {children}
       </div>
-    </>
-  )
-}
+
+      {/* TODO: add mail subscription (Mailchimp) */}
+
+      <Footer>
+        <SocialMediaTemplate />
+      </Footer>
+    </div>
+  </div>
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
