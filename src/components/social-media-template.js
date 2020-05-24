@@ -33,7 +33,7 @@ const SocialMediaTemplate = () => {
         <FontAwesomeIcon size="2x" icon={faInstagram}></FontAwesomeIcon>
       </SocialMediaStyle>
 
-      <SocialMediaStyle href="https://twitter.com/alsg0403">
+      <SocialMediaStyle href="https://www.youtube.com/channel/UCl8tCZ3-u2M-exw8bUHqDSA">
         {" "}
         <FontAwesomeIcon size="2x" icon={faYoutube}></FontAwesomeIcon>
       </SocialMediaStyle>
