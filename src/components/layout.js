@@ -6,34 +6,34 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-
-import { useStaticQuery, graphql } from "gatsby"
 import { Navbar, Footer, SocialMediaTemplate } from "../components"
+import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => (
-  <div>
+  <div className="container is-fluid">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Angelica Gonzales</title>
+      <link rel="canonical" href="https://alsg.me" />
+    </Helmet>
+
     <Navbar />
 
-    <div
-      className="container"
-      style={{
-        padding: `0px 40px`,
-      }}
-    >
-      <div
-        className="content"
-        style={{ padding: `2rem 25rem 1.5rem 0`, textAlign: `justify` }}
-      >
-        {children}
+    <section className="section" style={{ paddingTop: `5rem` }}>
+      <div className="container">
+        <div>
+          <div className="columns is-desktop">
+            <div className="column is-two-thirds">{children}</div>
+          </div>
+        </div>
+
+        {/* TODO: add mail subscription (Mailchimp) */}
+
+        <Footer>
+          <SocialMediaTemplate />
+        </Footer>
       </div>
-
-      {/* TODO: add mail subscription (Mailchimp) */}
-
-      <Footer>
-        <SocialMediaTemplate />
-      </Footer>
-    </div>
+    </section>
   </div>
 )
 
