@@ -3,7 +3,7 @@ import "react-bulma-components/dist/react-bulma-components.min.css"
 import "../style/theme.scss"
 
 const AboutMe = () => (
-  <div>
+  <div className="main-text">
     <p style={{ marginBottom: `25px` }}>
       Hi everyone! I am Angelica and I am your average 22 year-old who is still
       finding her place in the world.
