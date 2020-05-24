@@ -6,9 +6,6 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-
-import { useStaticQuery, graphql } from "gatsby"
 import { Navbar, Footer, SocialMediaTemplate } from "../components"
 
 const Layout = ({ children }) => (
