@@ -20,7 +20,7 @@ export default class Navbar extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            <a className="navbar-item" href="/">
+            <a className="navbar-item name" href="/">
               <div id="title-one" className="name">
                 Angelica
               </div>
